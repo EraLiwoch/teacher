@@ -7,6 +7,7 @@ html {
   
 *, *:before, *:after {
     box-sizing: inherit;
+    position: relative;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -24,20 +25,87 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*** Project styles ***/
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .header {
     width: 100%;
-    background-color: red;
-    padding: 2rem .5rem;
+    background-color: rgb(252,46,32);
+    padding: 1.8rem 6rem 0;
     color: #000;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .header__logo {
     font-size: 1.2rem;
     display: block;
+    font-weight: 700;
+}
+
+.header__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.header__nav_item {
+    list-style: none;
+}
+
+.header__nav_item a {
+    color: #000;
+    font-weight: 700;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.section--banner {
+    color: #fff;
+}
+
+.section__bg {
+    width: 100%;
+    display: block;
+    z-index: -1;
+    position: relative;
+}
+
+.section__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6rem;
+    max-width: 42rem;
+}
+
+.banner__name {
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+.banner__text {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+
+.banner__button {
+    background-color: rgb(156,252,80);
+    border: none;
+    font-size: 2rem;
+    width: 12rem;
+    font-weight: 700;
 }
