@@ -13,7 +13,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 ol, ul {
@@ -45,7 +45,7 @@ a {
     justify-content: space-between;
 }
 
-.header__logo {
+.header__logo, .footer__logo {
     font-size: 1.2rem;
     display: block;
     font-weight: 700;
@@ -58,7 +58,7 @@ a {
     width: 30%;
 }
 
-.header__nav_item {
+.header__nav_item, .footer__nav_item {
     list-style: none;
 }
 
@@ -76,6 +76,23 @@ a {
     color: #fff;
 }
 
+.section--banner .section__title {
+    text-align: left;
+    padding: 0;
+    color: #000;
+}
+
+.section--banner .section__text {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.section--banner .section__content {
+max-width: 52rem;
+}
+
 .section__bg {
     width: 100%;
     display: block;
@@ -89,6 +106,62 @@ a {
     transform: translateY(-50%);
     left: 6rem;
     max-width: 42rem;
+}
+
+.section__title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 6rem;
+    font-weight: 700;
+}
+
+.section__text {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem 10rem;
+    margin-bottom: 6rem;
+}
+
+.section__tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 0 6rem;
+}
+
+.section__img {
+    width: 14vw;
+    height: auto;
+}
+
+.section__button {
+    background-color: rgb(254,127,32);
+    border: none;
+    font-size: 1.4rem;
+    width: 8rem;
+    font-weight: 700;
+}
+
+.section__content_img {
+    width: 26rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6rem;
+}
+
+.section--green {
+    background-color: rgb(156,252,80);
+    padding: 0 6rem;
+}
+
+.section--green .section__text {
+    padding: 1rem 0;
+    margin: 0;
 }
 
 .banner__name {
@@ -108,4 +181,23 @@ a {
     font-size: 2rem;
     width: 12rem;
     font-weight: 700;
+}
+
+.footer {
+    padding: 1.8rem 6rem;
+    background-color: rgb(51,51,51);
+}
+
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}
+
+.footer__nav_item a {
+    color: #fff;
+    font-weight: 500;
 }

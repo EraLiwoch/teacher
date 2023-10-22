@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <section class="section section--banner">
+        <section class="section">
             <img src="images/background2.png" alt="" class="section__bg">
             <div class="section__content">
                 <h2 class="banner__name">POP IT!</h2>
@@ -35,24 +35,40 @@
         </section>
         <section class="section section--green">
             <h2 class="section__title">Choose your Pop-It!</h2>
-            <div class="_flex">
-                <div><img src="images/square.png" alt="" class="section__img"><span class="section__text">Multicolored square</span><button class="section__button">BUY</button></div>
-                <div><img src="images/amongus.png" alt="" class="section__img"><span class="section__text">Among Us, marbled</span><button class="section__button">BUY</button></div>
-                <div><img src="images/round.png" alt="" class="section__img"><span class="section__text">Multicolored round</span><button class="section__button">BUY</button></div>
+            <div class="section__tiles">
+                <div>
+                    <img src="images/square.png" alt="" class="section__img">
+                    <span class="section__text">Multicolored square</span>
+                    <button class="section__button">BUY</button>
+                </div>
+                <div>
+                    <img src="images/amongus.png" alt="" class="section__img">
+                    <span class="section__text">Among Us, marbled</span>
+                    <button class="section__button">BUY</button>
+                </div>
+                <div>
+                    <img src="images/round.png" alt="" class="section__img">
+                    <span class="section__text">Multicolored round</span>
+                    <button class="section__button">BUY</button>
+                </div>
             </div>
         </section>
-        <section class="section section--orange">
-            <h2 class="section__title">Rules of the game</h2>
-            <p class="section__text section__text--pic">Players take turns and click on the bumps. It is imperative to finish the row that you started. You can press a maximum of 3 bubbles at the same time (htey must be near, you cannot press several pimples at once, it they are not close to each other). The tast is to make the opponent go last. Who went last - he lost!</p>
+        <section class="section section--banner">
+            <img src="images/bg-grid2.png" alt="" class="section__bg">
+            <div class="section__content">
+                <h2 class="section__title">Rules of the game</h2>
+                <p class="section__text">Players take turns and click on the bumps. It is imperative to finish the row that you started. You can press a maximum of 3 bubbles at the same time (htey must be near, you cannot press several pimples at once, it they are not close to each other). The tast is to make the opponent go last. Who went last - he lost!</p>
+            </div>
+            <img src="images/photo.jpg" alt="" class="section__content_img">
         </section>
     </main>
     <footer class="footer">
-        <h2 class="footer__logo">not_a_bubble.com</h2>
         <nav class="footer__nav">
-            <li><a href="#">Payment methods</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Wholesale</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li class="footer__nav_item"><h2 class="footer__logo">not_a_bubble.com</h2></li>
+            <li class="footer__nav_item"><a href="#">Payment methods</a></li>
+            <li class="footer__nav_item"><a href="#">Delivery</a></li>
+            <li class="footer__nav_item"><a href="#">Wholesale</a></li>
+            <li class="footer__nav_item"><a href="#">Contacts</a></li>
         </nav>
     </footer>
 	<script src="index.js"></script>
